@@ -23,9 +23,40 @@ var paths = [
     [rD*7, 200, 360 + 170, '#0000DD']
 ]
 
+var sometext = "punkin squish "; 
 
-for (let i = 0; i < paths.length; i++) {
-    var arc = d3.arc()
+var arc = d3.arc()
+    .innerRadius(ringStart)
+    .outerRadius(ringStart+1)
+    .startAngle( 1 * (pi / 180)) // degs to radians
+    .endAngle( 40 * (pi / 180));
+
+vis.attr("width", "600")
+    .attr("height", "600")
+    .append("path")
+    .attr("id", 't123')
+    .attr("d", arc)
+    .attr("fill", '#ff00ff')
+    .attr("transform", "translate(400,300)");
+
+var daPath = document.getElementById('t123');
+var pathLength = daPath.getTotalLength();
+console.log(`path length: t123 ${pathLength}`);
+console.log("-----")
+
+vis.append("text")
+    .append("textPath")
+    .attr("id", 'tt123')
+    .attr("xlink:href", '#t123' )
+    .text( sometext )
+
+var daText = document.getElementById('tt123');
+var textLength = daText.getComputedTextLength();
+console.log(`text length: t123 ${textLength} `);
+
+//for (let i = 0; i < paths.length; i++) {
+for (let i = 0; i < 1; i++) {
+    arc = d3.arc()
 	.innerRadius(ringStart - paths[i][0])
 	.outerRadius(ringStart + 2 - paths[i][0])
 	.startAngle(paths[i][1] * (pi / 180)) // degs to radians
@@ -33,44 +64,30 @@ for (let i = 0; i < paths.length; i++) {
     var id = `id_${i}`;
     var textId = `text${id}`
     
-    vis.attr("width", "600").attr("height", "600")
-	.append("path")
+    vis.append("path")
 	.attr("id", id)
 	.attr("d", arc)
 	.attr("fill", paths[i][3])
 	.attr("transform", "translate(300,300)")
 
     var daPath = document.getElementById(id);
-    console.log(`path length: ${id} ${daPath.getTotalLength()}`);
+    var pathLength = daPath.getTotalLength();
 
+    var n = pathLength / textLength;
+    var nr = Math.trunc(n / 2);
+    console.log(`n: ${n} ${nr} path length: ${id} ${pathLength}`);
+    // ??
+    // too long - wraps around "quish"
+    // how to stop wrap?
+
+    var coolText = sometext.repeat( nr )
+    
     vis.append("text")
 	.append("textPath")
 	.attr("id", textId)
 	.attr("xlink:href", `#${id}` )
-	.style("text-anchor", "left")
+//	.style("text-anchor", "left")
 	.attr("startOffset", "0%")
-	.text("punkin squish punkin squish");
-
-    var daText = document.getElementById(textId);
-    console.log(`text length: ${textId} ${daText.getComputedTextLength()} `);
+	.text(coolText);
 
 }
-
-
-/*
-      //Create an SVG path (based on bl.ocks.org/mbostock/2565344)
-      svg.append("path")
-    .attr("id", "wavy") //Unique id of the path
-    .attr("d", "M 10,90 Q 100,15 200,70 Q 340,140 400,30") //SVG path
-    .style("fill", "none")
-    .style("stroke", "#AAAAAA");
-
-      //Create an SVG text element and append a textPath element
-      svg.append("text")
-    .append("textPath") //append a textPath to the text element
-    .attr("xlink:href", "#wavy") //place the ID of the path here
-    .style("text-anchor","middle") //place the text halfway on the arc
-    .attr("startOffset", "50%")
-    .text("Yay, my text is on a wavy path");
-
-*/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+    <style>
+      body { font-family: Arial; }
+    </style>
+  </head>
+
+  <body>
+    <svg id="demoArc" width="200" height="200"></svg>
+    <svg id="demoArcOutline" width="200" height="200"></svg>
+
+
+    <script language = "javascript">
+      //Create the SVG
+      var svg = d3.select("body").append("svg")
+	  .attr("width", 500)
+	  .attr("height", 500);
+
+      //Create an SVG path (based on bl.ocks.org/mbostock/2565344)
+      svg.append("path")
+    .attr("id", "wavy") //Unique id of the path
+    .attr("d", "M 10,90 Q 100,15 200,70 Q 340,140 400,30") //SVG path
+    .style("fill", "none")
+    .style("stroke", "#AAAAAA");
+
+      //Create an SVG text element and append a textPath element
+      svg.append("text")
+    .append("textPath") //append a textPath to the text element
+    .attr("xlink:href", "#wavy") //place the ID of the path here
+    .style("text-anchor","middle") //place the text halfway on the arc
+    .attr("startOffset", "50%")
+    .text("Yay, my text is on a wavy path");
+
+
+      //Creating an Arc path
+      // M start-x, start-y A radius-x, radius-y, x-axis-rotation,
+      //   large-arc-flag, sweep-flag, end-x, end-y 
+      svg.append("path")
+    .attr("id", "circo") //Unique id of the path
+//    .attr("d", "M 0,150 A 80,80,0 0,1 300,200") //SVG path
+    .attr("d", "M 0,200 A 20,20 0 0,1 700,220") //SVG path
+    .style("fill", "none")
+    .style("stroke", "#AAAAAA");
+
+      //Create an SVG text element and append a textPath element
+      svg.append("text")
+    .append("textPath") //append a textPath to the text element
+    .attr("xlink:href", "#circo") //place the ID of the path here
+//    .style("text-anchor","middle") //place the text halfway on the arc
+//    .attr("startOffset", "50%")
+    .text("Yay, my text is on an arc");
+
+      
+
+      
+
+    </script>
+  </body>
+</html>

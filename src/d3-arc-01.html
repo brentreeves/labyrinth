@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+    <style>
+      body { font-family: Arial; }
+    </style>
+  </head>
+
+  <body>
+    <svg id="demoArc" width="200" height="200"></svg>
+    <svg id="demoArcOutline" width="200" height="200"></svg>
+
+
+    <script language = "javascript">
+      var center = [100, 100];
+      var radius = 75;
+      var startAngle = 100;
+      var endAngle = Math.PI / 2;
+
+      var arcPath = d3.path();
+      arcPath.moveTo(center[0], center[1]);
+      arcPath.arc(center[0], center[1], radius, startAngle, endAngle)
+      arcPath.closePath();
+      
+      d3.select("#demoArc")
+    .append("path")
+    .attr("d", arcPath)
+    .attr("stroke", "black")
+    .attr("fill", "red");
+      
+      d3.select("#demoArcOutline")
+    .append("path")
+    .attr("d", arcPath)
+    .attr("stroke", "black")
+    .attr("fill", "red");
+
+      addArcOutline(center, radius, d3.select("#demoArcOutline"));
+
+    </script>
+  </body>
+</html>

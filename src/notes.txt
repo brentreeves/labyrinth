@@ -1,0 +1,7 @@
+<path id="t123" d="M4.904126208876691,-280.95720233894593A281,281,0,0,1,180.62331832191757,-215.25848851643283L179.98053071223103,-214.49244407331383A280,280,0,0,0,4.886673802439407,-279.95735464378953Z" fill="#ff00ff" transform="translate(400,300)"></path>
+
+<text><textPath id="tt123" xlink:href="#t123">punkin squish </textPath></text>
+
+<path id="id_0" d="M-48.96878610207441,277.7157863494427A282,282,0,1,1,-9.841658070105076,281.828213219385L-9.771859076700075,279.8294315653468A280,280,0,1,0,-48.62148974674055,275.74617084341827Z" fill="#00FF00" transform="translate(300,300)"></path>
+
+<text><textPath id="textid_0" xlink:href="#id_0" startOffset="0%">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish </textPath></text>

@@ -27,9 +27,9 @@ var sometext = "punkin squish ";
 
 var arc = d3.arc()
     .innerRadius(ringStart)
-    .outerRadius(ringStart+1)
-    .startAngle( 1 * (pi / 180)) // degs to radians
-    .endAngle( 40 * (pi / 180));
+    .outerRadius(ringStart)
+    .startAngle( paths[0][1] * (pi / 180)) // degs to radians
+    .endAngle( paths[0][2] * (pi / 180));
 
 vis.attr("width", "600")
     .attr("height", "600")
@@ -37,12 +37,13 @@ vis.attr("width", "600")
     .attr("id", 't123')
     .attr("d", arc)
     .attr("fill", '#ff00ff')
-    .attr("transform", "translate(400,300)");
+    .attr("transform", "translate(300,270)");
 
 var daPath = document.getElementById('t123');
 var pathLength = daPath.getTotalLength();
+console.log("----- begin")
 console.log(`path length: t123 ${pathLength}`);
-console.log("-----")
+
 
 vis.append("text")
     .append("textPath")
@@ -53,14 +54,15 @@ vis.append("text")
 var daText = document.getElementById('tt123');
 var textLength = daText.getComputedTextLength();
 console.log(`text length: t123 ${textLength} `);
+console.log("----- end")
 
 //for (let i = 0; i < paths.length; i++) {
 for (let i = 0; i < 1; i++) {
     arc = d3.arc()
 	.innerRadius(ringStart - paths[i][0])
-	.outerRadius(ringStart + 2 - paths[i][0])
+	.outerRadius(ringStart - paths[i][0])
 	.startAngle(paths[i][1] * (pi / 180)) // degs to radians
-	.endAngle( paths[i][2] * (pi / 180));
+	.endAngle(  paths[i][2] * (pi / 180));
     var id = `id_${i}`;
     var textId = `text${id}`
     
@@ -88,6 +90,14 @@ for (let i = 0; i < 1; i++) {
 	.attr("xlink:href", `#${id}` )
 //	.style("text-anchor", "left")
 	.attr("startOffset", "0%")
+	.attr("method", "stretch")
+	.attr("side", "right")
 	.text(coolText);
 
+    
+    daText = document.getElementById(textId);
+    textLength = daText.getComputedTextLength();
+console.log(`text length: t123 ${textId} ${textLength} `);
+
+    
 }

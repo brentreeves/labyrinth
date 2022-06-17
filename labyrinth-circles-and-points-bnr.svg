@@ -218,15 +218,15 @@
   </g>
   <!-- <circle id="c1" class="st2" cx="303" cy="303" r="280"/> -->
   <!-- <circle id="c2" class="st2" cx="303" cy="303" r="248"/> -->
-  <circle class="st2" cx="303" cy="303" r="216"/>
-  <circle class="st2" cx="303" cy="303" r="184"/>
-  <circle class="st2" cx="303" cy="303" r="152"/>
+  <!-- <circle class="st2" cx="303" cy="303" r="216"/> -->
+  <!-- <circle class="st2" cx="303" cy="303" r="184"/> -->
+  <!-- <circle class="st2" cx="303" cy="303" r="152"/> -->
   <circle class="st2" cx="303" cy="303" r="120"/>
   <circle class="st2" cx="303" cy="303" r="88"/>
   <circle class="st2" cx="303" cy="303" r="57"/>
 
-  <!-- 1: M253.9,584.9   M285.2,589.1 = 31.3,5  -->
-  <!-- M253.9,578.9      M284.9,582.68 = 31,3.78 -->
+  <!-- 1 M253.9,584.9   -->
+  <!-- 3 287,582.68  31,3.78 -->
 
   <path id="p01" fill="none" transform="translate(0,0)"	d="M 253.9,578.9  a 280,280 0 1,1 31,3.78" />
 
@@ -261,6 +261,18 @@
   
   <path id="p04b" fill="none" transform="translate(0,0)" d="M 122.6976,269.4  a 184,184 0 1,1  195.1024,217" />
 
+  
+<!-- 11 254.4625,445.1  -->
+<!-- 30 453.9,278     -->
+  
+  <path id="p05" fill="none" transform="translate(0,0)" d="M 254.4625,445.1  a 152,152 0 1,1  199.4375,-167.1" />
+
+  <!-- 36 450.8976,337.5  -->
+  <!-- 10 287.1,454.3992     -->
+  
+  <path id="p05b" fill="none" transform="translate(0,0)" d="M 450.8976,337.5  a 152,152 0 0,1  -163,116.8992" />
+
+  
   <text class="cls-1">
     <textPath href="#p01">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish asdfasdf
     </textPath>
@@ -280,6 +292,14 @@
     </textPath>
 
     <textPath href="#p04b">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish 
+    </textPath>
+
+    
+    <textPath href="#p05">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish 
+    </textPath>
+
+        
+    <textPath href="#p05b">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish 
     </textPath>
 
   </text>

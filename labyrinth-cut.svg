@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="6.4375in" height="6.462in" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 463.4989 465.2645">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #221f20;
+        stroke-miterlimit: 10;
+        stroke-width: .001px;
+      }
+    </style>
+  </defs>
+  <image width="1576" height="1582" transform="translate(0 .0005) scale(.2941)" xlink:href="labyrinth-screenshot.png"/>
+  <ellipse class="cls-1" cx="232.5825" cy="232.6323" rx="230.5596" ry="232.6318"/>
+</svg>

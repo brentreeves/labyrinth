@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Brent Reeves, labyrynth.svg  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:none;}
+  .st1{fill:#010101;}
+  .st2{fill:none;stroke:#010101;stroke-miterlimit:10;}
+  .cls-1 {
+  fill: #231f20;
+  font-family: bromello, 'Bromello Regular';
+  font-size: 14.00000px;
+  }
+  
+<!--                     <stFnt:fontName>bromello-Regular</stFnt:fontName>
+                  <stFnt:fontFamily>bromello</stFnt:fontFamily>
+                  <stFnt:fontFace>Regular</stFnt:fontFace>
+                  <stFnt:fontType>Open Type</stFnt:fontType>
+                  <stFnt:versionString>Version 1.003;PS 001.003;hotconv 1.0.88;makeotf.lib2.5.64775</stFnt:versionString>
+                  <stFnt:composite>False</stFnt:composite>
+                  <stFnt:fontFileName>bromello-Regular.otf</stFnt:fontFileName> -->
+
+</style>
+
+<path id="pid1" fill="none" transform="translate(0,0) scale(1 1)"
+      d="
+	 M 253,579  a 280,280  0 1,1  33,4  
+	 M 222,537  a 248,248  0 1,1  327,-262  
+	 M 548,338  a 248,248  0 0,1  -230,212  
+	 M 253,513  a 216,216  0 0,1  20,-423  
+	 M 340,91  a 216,216  0 0,1  8,423  
+	 M 286,486  a 184,184  0 0,1  -165,-152  
+	 M 123,270  a 184,184  0 1,1  195,216  
+	 M 254,445  a 152,152  0 1,1  199,-167  
+	 M 453,340  a 152,152  0 0,1  -164,114  
+	 M 222,392  a 120,120  0 0,1  51,-205  
+	 M 338,190  a 120,120  0 0,1  -20,232  
+	 M 254,376  a 88,88  0 0,1  -33,-41  
+	 M 221,270  a 88,88  0 1,1  126,107  
+	 M 286,358  a 57,57  0 1,1  32,-1  
+"
+      />
+
+<path id="pid2" fill="none" transform="translate(0,0)  scale(1 1)"
+      d="
+	 M 253,579  l 0,-66
+	 M 254,445  l 0,-69
+	 M 88,304  l 54,0
+	 M 183,304  l 50,0
+	 M 430,304  l 58,0
+	 M 520,304  l 63,0
+	 M 286,583  l 0,-225
+	 M 318,550  l 0,-64
+	 M 318,422  l 0,-65
+	 M 308,210  l 0,-59
+	 M 308,111  l 0,-56
+	 "
+      />
+
+<text class="cls-1">
+  <textPath href="#pid1">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish 
+  </textPath>
+
+  <textPath href="#pid2" side="left">punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish punkin squish 
+  </textPath>
+
+</text>
+
+
+
+</svg>

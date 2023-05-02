@@ -10,7 +10,7 @@ generate labyrinths in which your words form the path.
 
 
 ## Also:
-If you have a nice png, you might be able to use labyrinth-cut.svg to scale it.
+If you have a nice png, you might be able to use labyrinth-cut.svg to scale it and send the scaled image to a laser cutter.
 
 
 ## Files:
